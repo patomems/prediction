@@ -1,0 +1,247 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <!-- USEFULL META -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Transportation & Agency Template is a simple Smooth transportation and Agency Based Template" />
+    <meta name="keywords" content="Portfolio, Agency, Onepage, Html, Business, Blog, Parallax" />
+
+    <!-- TITLE TAG -->
+    <title>Rainfall Prediction</title>
+
+    <!-- FAVICON ICON -->
+    <link rel="shortcut icon" type="image/ico" href="{{ url_for('static',filename='img/icon.jpeg')}}" />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/stellarnav.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.css')}}">
+    <link href="{{ url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/font-awesome.min.css')}}" rel="stylesheet">
+
+    <!-- MAIN STYLESHEETS -->
+    <link href="{{ url_for('static',filename='style.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/responsive.css')}}" rel="stylesheet">
+
+    <script src="{{ url_for('static',filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="home-one">
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--- PRELOADER -->
+    <div class="preeloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!--SCROLL TO TOP-->
+    <a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>
+
+    <header class="top-area" id="home">
+        <div class="top-area-bg" data-stellar-background-ratio="0.6"></div>
+        <div class="header-top-area">
+
+            <div class="mainmenu-area" id="mainmenu-area">
+                <div class="mainmenu-area-bg"></div>
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="#home" class="navbar-brand"><img src="{{ url_for('static',filename='img/logo.png')}}" alt="logo" style="margin-top: 10px;"></a>
+                        </div>
+                        <div id="main-nav" class="stellarnav ">
+                            <ul id="nav" class="nav navbar-nav">
+                                <li><a href="{{ url_for('index')}}">home</a></li>
+                                <li><a href="{{ url_for('about_team')}}">about</a> </li>
+                                <li><a href="{{ url_for('service')}}">Service</a></li>
+                                <li><a href="{{ url_for('contact')}}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="welcome-slider-area">
+            <div class="welcome-single-slide slider-bg-one">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>RAINFALL and Flood prediction</h1>
+                                <p>RAINFALL PREDICTION PLAYS A VERY VITAL ROLE IN OUR ECONOMY TODAY.</p>
+                                <div class="home-button">
+                                    <a href="{{ url_for('rainfallHome')}}">RAINFALL ANALYSIS</a>
+                                    <a href="{{ url_for('floodHome')}}">FLOOD PREDICTION</a>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-single-slide slider-bg-two">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>RAINFALL and Flood prediction</h1>
+                                <p>RAINFALL PREDICTION PLAYS A VERY VITAL ROLE IN OUR ECONOMY TODAY.</p>
+                                <div class="home-button">
+                                    <a href="{{ url_for('rainfallHome')}}">RAINFALL ANALYSIS</a>
+                                    <a href="{{ url_for('floodHome')}}">FLOOD PREDICTION</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <section class="blog-area gray-bg padding-top">
+    <h3 style="text-align: center;">Blog Post Latest News</h3>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-image">
+                            <img src="{{ url_for('static',filename='img/blog/b.jpg')}}" alt="" style="width:360px;height:260px;">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i></i></a></div>
+                            <h3><a href="#">KAINUK BRIDGE COLLAPSES</a></h3>
+                            <p>Transport to and from Turkana has been paralyzed after the Kainuk bridge collapsed due to heavy rainfall </p>
+                            <a href="http://floodlist.com/africa/kenya-floods-november-2017" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-image">
+                            <img src="{{ url_for('static',filename='img/blog/rszb1.jpg')}}" alt="" style="width:360px;height:260px;">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i></i></a></div>
+                            <h3><a href="#">RISING WATERS </a></h3>
+                            <p>The rising waters of Lake Baringo have displaced thousands of people, submerging homes and farmland</p>
+                            <a href="https://www.aljazeera.com/news/2020/8/30/why-kenyas-rift-valley-lakes-are-going-through-a-crisis" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="single-blog wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-image">
+                            <img src="{{ url_for('static',filename='img/blog/b2.jpg')}}" alt=""  style="width:360px;height:260px;">
+                        </div>
+                        <div class="blog-details text-center">
+                            <div class="blog-meta"><a href="#"><i></i></a></div>
+                            <h3><a href="#">HEAVY RAINFALL</a></h3>
+                            <p>Heavy rainfall is expected to continue in the East African region for the next few months.Farmers should..</p>
+                            <a href="https://citizentv.co.ke/news/heavy-rains-to-persist-as-floods-wreak-havoc-290701/" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+  <!--Footer-->
+    <div class="footer-area dark-bg">
+        <div class="footer-area-bg"></div>
+        <div class="footer-top-area wow fadeIn">
+        </div>
+        <div class="footer-bottom-area wow fadeIn">
+            <div class="container">
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget footer-about">
+                        <h3>Contacts</h3>
+                        <p>Juja city</p>
+                        <ul>
+                            <li><i class="fa fa-phone"></i> <a href="callto:+254-719869286">+254-719869286</a></li>
+                            <li><i class="fa fa-map-marker"></i> <a href="mailto:rprediction@gmail.com">rprediction@gmail.com</a></li>
+                            <li><i class="fa fa-phone"></i> address , 10290, Juja.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget twitter-widget">
+                        <h3>Latest Tweets</h3>
+                        <ul>
+                            <li>
+                                <div class="twitter-icon"><i class="fa fa-phone"></i></div>
+                                <div class="tweet-detail">
+                                    <p>Heavy rains experienced in Baringo, the water levels are rising and submerging the roads.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="twitter-icon"><i class="fa fa-phone"></i></div>
+                                <div class="tweet-detail">
+                                    <p>For two days heavy rainfall has been experienced in Thika .</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget list-widget">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li><a href="{{ url_for('contact')}}">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social-bookmark text-right wow fadeIn">
+                    <ul class="social-bookmark">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== SCRIPTS JS ======-->
+    <script src="{{ url_for('static',filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/bootstrap.min.js')}}"></script>
+
+    <!--====== PLUGINS JS ======-->
+    <script src="{{ url_for('static',filename='js/vendor/jquery.easing.1.3.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/jquery-migrate-1.2.1.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/vendor/jquery.appear.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/stellar.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/wow.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/stellarnav.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/contact-form.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery.sticky.js')}}"></script>
+
+    <!--===== ACTIVE JS=====-->
+    <script src="{{ url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>
